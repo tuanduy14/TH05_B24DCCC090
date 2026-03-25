@@ -36,6 +36,48 @@
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
 	},
+	{
+		path: '/quan-ly-clb',
+		name: 'Quản lý CLB',
+		icon: 'TeamOutlined',
+		locale: false,
+		routes: [
+			{
+				path: '/quan-ly-clb',
+				redirect: '/quan-ly-clb/cau-lac-bo',
+			},
+			{
+				path: '/quan-ly-clb/cau-lac-bo',
+				name: 'Câu lạc bộ',
+				locale: false,
+				component: './QuanLyCLB/CauLacBo',
+			},
+			{
+				path: '/quan-ly-clb/don-dang-ky',
+				name: 'Đơn đăng ký',
+				locale: false,
+				component: './QuanLyCLB/DonDangKy',
+			},
+			{
+				path: '/quan-ly-clb/thanh-vien',
+				name: 'Thành viên',
+				locale: false,
+				component: './QuanLyCLB/ThanhVien',
+			},
+			{
+				path: '/quan-ly-clb/lich-su',
+				name: 'Lịch sử thao tác',
+				locale: false,
+				component: './QuanLyCLB/LichSu',
+			},
+			{
+				path: '/quan-ly-clb/bao-cao',
+				name: 'Báo cáo thống kê',
+				locale: false,
+				component: './QuanLyCLB/BaoCao',
+			},
+		],
+	},
 
 	// DANH MUC HE THONG
 	// {
